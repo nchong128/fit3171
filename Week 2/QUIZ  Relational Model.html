@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>QUIZ: Relational Model</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, QUIZ: Relational Model" />
+<link rel="stylesheet" type="text/css" href="https://lms.monash.edu/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://lms.monash.edu/theme/styles.php/monash/1551288643_1551289150/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/lms.monash.edu","sesskey":"pGjEELfEFD","themerev":"1551288643","slasharguments":1,"theme":"monash","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1551288643","admin":"admin","svgicons":true,"usertimezone":"Australia\/Melbourne","contextid":8383104};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/lms.monash.edu\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/lms.monash.edu\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/lms.monash.edu\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/lms.monash.edu\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/lms.monash.edu\/theme\/yui_combo.php?m\/1551288643\/","combine":true,"comboBase":"https:\/\/lms.monash.edu\/theme\/yui_combo.php?","ext":false,"root":"m\/1551288643\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_hsuforum-io":{"requires":["base","io-base","io-form","io-upload-iframe","json-parse"]},"moodle-mod_hsuforum-article":{"requires":["base","node","event","router","core_rating","querystring","moodle-mod_hsuforum-io","moodle-mod_hsuforum-livelog","moodle-core-formchangechecker"]},"moodle-mod_hsuforum-livelog":{"requires":["widget"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-format_grid-gridkeys":{"requires":["event-nav-keys"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_htmlplus-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_htmlplus-beautify","moodle-atto_htmlplus-codemirror","event-valuechange"]},"moodle-atto_htmlplus-codemirror":{"requires":["moodle-atto_htmlplus-codemirror-skin"]},"moodle-atto_htmlplus-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_panoptobutton-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_preview-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/lms.monash.edu\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/lms.monash.edu\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1551288643\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/lms.monash.edu\/lib\/javascript.php\/1551288643\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/lms.monash.edu\/lib\/javascript.php\/1551288643\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.2\/MathJax.js?delayStartupUntil=configured"},"core_question_flags":{"name":"core_question_flags","fullpath":"https:\/\/lms.monash.edu\/lib\/javascript.php\/1551288643\/question\/flags.js","requires":["base","dom","event-delegate","io-base"]},"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/lms.monash.edu\/lib\/javascript.php\/1551288643\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/lms.monash.edu\/lib\/javascript.php\/1551288643\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<!-- WEB ANALYTICS 1 START --><script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-68086108-4', {'siteSpeedSampleRate': 50});
+    
+    ga('send', 'pageview');
+</script><!-- WEB ANALYTICS 1 END -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/theme/monash/pix/favicon-152.png">
+    <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/theme/monash/pix/favicon-144.png">
+    <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/theme/monash/pix/favicon-120.png">
+    <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/theme/monash/pix/favicon-114.png">
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/theme/monash/pix/favicon-72.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="/theme/monash/pix/favicon-57.png">
+    <link rel="icon" href="/theme/monash/pix/favicon.ico">
+    <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="/theme/monash/pix/favicon.ico" /><![endif]-->
+</head>
+<body  id="page-mod-quiz-review" class="format-grid  path-mod path-mod-quiz gecko dir-ltr lang-en yui-skin-sam yui3-skin-sam lms-monash-edu pagelayout-incourse course-51171 context-8383104 cmid-5788694 category-3893 ">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script type="text/javascript" src="https://lms.monash.edu/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script type="text/javascript" src="https://lms.monash.edu/lib/javascript.php/1551288643/lib/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <nav class="fixed-top navbar navbar-light bg-white moodle-has-zindex" aria-label="Site navigation">
+    
+            <div data-region="drawer-toggle" class="drawer-toggle">
+                <button aria-expanded="false" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><i class="icon fa fa-bars fa-fw " aria-hidden="true"  ></i><span class="sr-only">Side panel</span></button>
+            </div>
+    
+            <a href="https://lms.monash.edu" class="navbar-brand has-logo">
+                <img src="https://lms.monash.edu/theme/image.php/monash/theme/1551288643/monash-logo-mono" alt="Monash Moodle">
+            </a>
+    
+            <div class="header-right">
+                    <div class="custom-menus">
+                        <a href="https://unitguidemanager.monash.edu/search" target="_blank" title="Unit Guides" class="custommenu unitguide" role="button"><span>Unit Guides</span></a>
+                    </div>
+                    <div class="custom-menus">
+                        <a href="https://www.intranet.monash/vle" target="_blank" title="Help" class="custommenu help" role="button"><span>Help</span></a>
+                    </div>
+    
+                <!-- navbar_plugin_output -->
+                <div class="popover-region collapsed popover-region-messages"
+    id="nav-message-popover-container" data-userid="534408"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        aria-role="button"
+        aria-controls="popover-region-container-5c84e06fe041b5c84e06fc6d144"
+        aria-haspopup="true"
+        aria-label="Show message window with no new messages"
+        tabindex="0" title="Show message window with no new messages">
+                <i class="icon fa fa-comment fa-fw "  title="Toggle messages menu" aria-label="Toggle messages menu"></i>
+        <div class="count-container hidden" data-region="count-container">0</div>
+
+    </div>
+    <div 
+        id="popover-region-container-5c84e06fe041b5c84e06fc6d144"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Notification window"
+        role="region" title="Show message window with no new messages">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Messages</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="newmessage-link">
+            <a href="https://lms.monash.edu/message/index.php?contactsfirst=1">New message
+            </a>
+        </div>
+        <a class="mark-all-read-button"
+           href="#"
+           role="button"
+           title="Mark all as read"
+           data-action="mark-all-read">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw "  title="Mark all as read" aria-label="Mark all as read"></i></span>
+            <span class="loading-icon"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Loading" aria-label="Loading"></i></span>
+        </a>
+        <a href="https://lms.monash.edu/message/edit.php?id=534408"
+           title="Message preferences">
+            <i class="icon fa fa-cog fa-fw "  title="Message preferences" aria-label="Message preferences"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="messages" data-region="messages" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" data-region="empty-message" tabindex="0">No messages</div>
+
+            </div>
+            <span class="loading-icon"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Loading" aria-label="Loading"></i></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://lms.monash.edu/message/index.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="534408"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        aria-role="button"
+        aria-controls="popover-region-container-5c84e06fe17005c84e06fc6d145"
+        aria-haspopup="true"
+        aria-label="Show notification window with no new notifications"
+        tabindex="0" title="Show notification window with no new notifications">
+                <i class="icon fa fa-bell fa-fw "  title="Toggle notifications menu" aria-label="Toggle notifications menu"></i>
+        <div class="count-container hidden" data-region="count-container">0</div>
+
+    </div>
+    <div 
+        id="popover-region-container-5c84e06fe17005c84e06fc6d145"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Notification window"
+        role="region" title="Show notification window with no new notifications">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button"
+           href="#"
+           title="Mark all as read"
+           data-action="mark-all-read"
+           role="button">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw "  title="Mark all as read" aria-label="Mark all as read"></i></span>
+            <span class="loading-icon"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Loading" aria-label="Loading"></i></span>
+        </a>
+        <a href="https://lms.monash.edu/message/notificationpreferences.php?userid=534408"
+           title="Notification preferences">
+            <i class="icon fa fa-cog fa-fw "  title="Notification preferences" aria-label="Notification preferences"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+            </div>
+            <span class="loading-icon"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Loading" aria-label="Loading"></i></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://lms.monash.edu/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div>
+                <!-- user_menu -->
+                <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items d-inline" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-1-menubar" role="menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown d-inline">
+                        <a tabindex="0" class=" dropdown-toggle" id="dropdown-1" aria-label="User menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-1-menu"><span class="userbutton"><span class="avatars"><span class="avatar current"><img src="https://lms.monash.edu/theme/image.php/monash/core/1551288643/u/f2" class="userpicture defaultuserpic" width="35" height="35" role="presentation" aria-hidden="true" /></span></span><span class="usertext">Nicholas Lin Ren Chong</span></span><b class="caret"></b></a>
+                            <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br" id="dropdown-menu-1">
+                                <a href="https://lms.monash.edu/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1"><i class="icon fa fa-tachometer fa-fw "  title="Dashboard" aria-label="Dashboard"></i><span class="menu-action-text" id="actionmenuaction-1">Dashboard</span></a><div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div><a href="https://lms.monash.edu/user/profile.php?id=534408" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2"><i class="icon fa fa-user fa-fw "  title="Profile" aria-label="Profile"></i><span class="menu-action-text" id="actionmenuaction-2">Profile</span></a><a href="https://lms.monash.edu/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3"><i class="icon fa fa-table fa-fw "  title="Grades" aria-label="Grades"></i><span class="menu-action-text" id="actionmenuaction-3">Grades</span></a><a href="https://lms.monash.edu/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4"><i class="icon fa fa-comment fa-fw "  title="Messages" aria-label="Messages"></i><span class="menu-action-text" id="actionmenuaction-4">Messages</span></a><a href="https://lms.monash.edu/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5"><i class="icon fa fa-wrench fa-fw "  title="Preferences" aria-label="Preferences"></i><span class="menu-action-text" id="actionmenuaction-5">Preferences</span></a><div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div><a href="https://lms.monash.edu/login/logout.php?sesskey=pGjEELfEFD" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6"><i class="icon fa fa-sign-out fa-fw "  title="Log out" aria-label="Log out"></i><span class="menu-action-text" id="actionmenuaction-6">Log out</span></a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></div>
+            </div>
+    </nav>
+    
+
+    <div id="page" class="container-fluid">
+        <header id="page-header" class="row">
+        <div class="header-banner" style="background-image: url(https://lms.monash.edu/pluginfile.php/120/theme_monash/banner/1261658/faculty%20of%20it.png)">
+            <div class="header-top">
+                <div class="header-button">
+                    
+                </div>
+                <div id="course-header">
+                    
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="header-title">
+                FIT2094-FIT3171 Databases S1 2019
+                </div>
+
+            </div>
+        </div>
+</header>
+    <div id="page-navbar">
+        <nav role="navigation">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="https://lms.monash.edu/my/" >Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">My units</li>
+                <li class="breadcrumb-item">
+                    <a href="https://lms.monash.edu/course/view.php?id=51171" title="FIT2094-FIT3171 Databases S1 2019">FIT2094-FIT3171_S1_2019</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="https://lms.monash.edu/course/view.php?id=51171&amp;section=8" >Week 2 (11 Mar - 17 Mar)</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="https://lms.monash.edu/mod/quiz/view.php?id=5788694" title="Quiz">QUIZ: Relational Model</a>
+                </li>
+    </ol>
+</nav>
+    </div>
+
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-12">
+                <section id="region-main" class="has-blocks mb-3">
+                    <div class="card-monash">
+                        <span class="notifications" id="user-notifications"></span>
+                        <div role="main"><span id="maincontent"></span><table class="generaltable generalbox quizreviewsummary"><tbody><tr><th class="cell" scope="row">Started on</th><td class="cell">Sunday, 10 March 2019, 11:22 AM</td></tr><tr><th class="cell" scope="row">State</th><td class="cell">Finished</td></tr><tr><th class="cell" scope="row">Completed on</th><td class="cell">Sunday, 10 March 2019, 4:47 PM</td></tr><tr><th class="cell" scope="row">Time taken</th><td class="cell">5 hours 24 mins</td></tr><tr><th class="cell" scope="row">Marks</th><td class="cell">16.00/16.00</td></tr><tr><th class="cell" scope="row">Grade</th><td class="cell"><b>10.00</b> out of 10.00 (<b>100</b>%)</td></tr></tbody></table><form action="https://lms.monash.edu/mod/quiz/review.php?attempt=11262323&amp;cmid=5788694" method="post" class="questionflagsaveform"><div><div id="q1" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">1</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q11531371:1_:flagged" value="0" /><input type="checkbox" id="q11531371:1_:flaggedcheckbox" name="q11531371:1_:flagged" value="1" checked="checked" /><input type="hidden" value="qaid=126345284&amp;qubaid=11531371&amp;qid=17016962&amp;slot=1&amp;checksum=1f3be164fa60a9541a28ebab92941cd2&amp;sesskey=pGjEELfEFD&amp;newstate=" class="questionflagpostdata" /><label id="q11531371:1_:flaggedlabel" for="q11531371:1_:flaggedcheckbox"><img src="https://lms.monash.edu/theme/image.php/monash/core/1551288643/i/flagged" alt="Flagged" id="q11531371:1_:flaggedimg" /> Flagged</label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q11531371:1_:sequencecheck" value="3" /><div class="qtext"><p><span>In a sophisticated application development software, nulls can create problems when using functions such as:</span></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q11531371:1_answer" disabled="disabled" value="0" id="q11531371:1_answer0" /><label for="q11531371:1_answer0" class="m-l-1"><span class="answernumber">a. </span><span>COUNT and AVERAGE</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:1_answer" disabled="disabled" value="1" id="q11531371:1_answer1" checked="checked" /><label for="q11531371:1_answer1" class="m-l-1"><span class="answernumber">b. </span><span>COUNT, SUM, and AVERAGE</span></label> </div>
+<div class="r0"><input type="radio" name="q11531371:1_answer" disabled="disabled" value="2" id="q11531371:1_answer2" /><label for="q11531371:1_answer2" class="m-l-1"><span class="answernumber">c. </span><span>COUNT</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:1_answer" disabled="disabled" value="3" id="q11531371:1_answer3" /><label for="q11531371:1_answer3" class="m-l-1"><span class="answernumber">d. </span>SUM</label> </div>
+</div></div></div></div></div><div id="q2" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">2</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q11531371:2_:flagged" value="0" /><input type="checkbox" id="q11531371:2_:flaggedcheckbox" name="q11531371:2_:flagged" value="1" /><input type="hidden" value="qaid=126345285&amp;qubaid=11531371&amp;qid=17016961&amp;slot=2&amp;checksum=681f9645316d6e56bc4524103ca42f16&amp;sesskey=pGjEELfEFD&amp;newstate=" class="questionflagpostdata" /><label id="q11531371:2_:flaggedlabel" for="q11531371:2_:flaggedcheckbox"><img src="https://lms.monash.edu/theme/image.php/monash/core/1551288643/i/unflagged" alt="Not flagged" id="q11531371:2_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q11531371:2_:sequencecheck" value="4" /><div class="qtext"><p><img src="https://lms.monash.edu/pluginfile.php/8382940/question/questiontext/11531371/2/17016961/relational%20table%20components.jpg" alt="table components" width="365" height="226" /></p>
+<p>In relational model terminologies, what (1) and (2) are called?</p></div><div class="ablock"><div class="prompt">Select one or more:</div><div class="answer"><div class="r0"><input type="checkbox" name="q11531371:2_choice0" disabled="disabled" value="1" id="q11531371:2_choice0" /><label for="q11531371:2_choice0" class="m-l-1"><span class="answernumber">a. </span>(1) table, (2) line</label> </div>
+<div class="r1"><input type="checkbox" name="q11531371:2_choice1" disabled="disabled" value="1" id="q11531371:2_choice1" /><label for="q11531371:2_choice1" class="m-l-1"><span class="answernumber">b. </span>(1) field, (2) record.</label> </div>
+<div class="r0"><input type="checkbox" name="q11531371:2_choice2" disabled="disabled" value="1" id="q11531371:2_choice2" checked="checked" /><label for="q11531371:2_choice2" class="m-l-1"><span class="answernumber">c. </span>(1) attribute, (2) tuple</label> </div>
+<div class="r1"><input type="checkbox" name="q11531371:2_choice3" disabled="disabled" value="1" id="q11531371:2_choice3" checked="checked" /><label for="q11531371:2_choice3" class="m-l-1"><span class="answernumber">d. </span>(1) column, (2) row</label> </div>
+</div></div></div></div></div><div id="q3" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">3</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q11531371:3_:flagged" value="0" /><input type="checkbox" id="q11531371:3_:flaggedcheckbox" name="q11531371:3_:flagged" value="1" checked="checked" /><input type="hidden" value="qaid=126345286&amp;qubaid=11531371&amp;qid=17016960&amp;slot=3&amp;checksum=b261d7da5df8f025affecaf81c8adb5c&amp;sesskey=pGjEELfEFD&amp;newstate=" class="questionflagpostdata" /><label id="q11531371:3_:flaggedlabel" for="q11531371:3_:flaggedcheckbox"><img src="https://lms.monash.edu/theme/image.php/monash/core/1551288643/i/flagged" alt="Flagged" id="q11531371:3_:flaggedimg" /> Flagged</label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q11531371:3_:sequencecheck" value="3" /><div class="qtext"><div style="font-size: 12pt; font-family: 'Times New Roman'; color: #000000;">A table can be logically connected to another table by defining a ____.</div></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q11531371:3_answer" disabled="disabled" value="0" id="q11531371:3_answer0" /><label for="q11531371:3_answer0" class="m-l-1"><span class="answernumber">a. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">logic key</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:3_answer" disabled="disabled" value="1" id="q11531371:3_answer1" /><label for="q11531371:3_answer1" class="m-l-1"><span class="answernumber">b. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">primary key</span></label> </div>
+<div class="r0"><input type="radio" name="q11531371:3_answer" disabled="disabled" value="2" id="q11531371:3_answer2" /><label for="q11531371:3_answer2" class="m-l-1"><span class="answernumber">c. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">hyperlink</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:3_answer" disabled="disabled" value="3" id="q11531371:3_answer3" checked="checked" /><label for="q11531371:3_answer3" class="m-l-1"><span class="answernumber">d. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">common attribute</span></label> </div>
+</div></div></div></div></div><div id="q4" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">4</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q11531371:4_:flagged" value="0" /><input type="checkbox" id="q11531371:4_:flaggedcheckbox" name="q11531371:4_:flagged" value="1" checked="checked" /><input type="hidden" value="qaid=126345287&amp;qubaid=11531371&amp;qid=17016959&amp;slot=4&amp;checksum=52df1b9e59ac8a4dcaef7edffdfa1628&amp;sesskey=pGjEELfEFD&amp;newstate=" class="questionflagpostdata" /><label id="q11531371:4_:flaggedlabel" for="q11531371:4_:flaggedcheckbox"><img src="https://lms.monash.edu/theme/image.php/monash/core/1551288643/i/flagged" alt="Flagged" id="q11531371:4_:flaggedimg" /> Flagged</label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q11531371:4_:sequencecheck" value="3" /><div class="qtext"><div style="font-size: 12pt; font-family: 'Times New Roman'; color: #000000;">A relational operator that yields values from all tuples but on selected attributes in a table is known as the ____ operator.</div></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q11531371:4_answer" disabled="disabled" value="0" id="q11531371:4_answer0" checked="checked" /><label for="q11531371:4_answer0" class="m-l-1"><span class="answernumber">a. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">PROJECT</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:4_answer" disabled="disabled" value="1" id="q11531371:4_answer1" /><label for="q11531371:4_answer1" class="m-l-1"><span class="answernumber">b. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">PRODUCT</span></label> </div>
+<div class="r0"><input type="radio" name="q11531371:4_answer" disabled="disabled" value="2" id="q11531371:4_answer2" /><label for="q11531371:4_answer2" class="m-l-1"><span class="answernumber">c. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">SELECT</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:4_answer" disabled="disabled" value="3" id="q11531371:4_answer3" /><label for="q11531371:4_answer3" class="m-l-1"><span class="answernumber">d. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">DIFFERENCE</span></label> </div>
+</div></div></div></div></div><div id="q5" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">5</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q11531371:5_:flagged" value="0" /><input type="checkbox" id="q11531371:5_:flaggedcheckbox" name="q11531371:5_:flagged" value="1" checked="checked" /><input type="hidden" value="qaid=126345288&amp;qubaid=11531371&amp;qid=17016957&amp;slot=5&amp;checksum=8e13f3a5504c601fa2d784c6a0734efd&amp;sesskey=pGjEELfEFD&amp;newstate=" class="questionflagpostdata" /><label id="q11531371:5_:flaggedlabel" for="q11531371:5_:flaggedcheckbox"><img src="https://lms.monash.edu/theme/image.php/monash/core/1551288643/i/flagged" alt="Flagged" id="q11531371:5_:flaggedimg" /> Flagged</label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q11531371:5_:sequencecheck" value="3" /><div class="qtext"><div style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">A relational operator that allows for the combination of information from two or more tables is known as the ____ operator.</div></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q11531371:5_answer" disabled="disabled" value="0" id="q11531371:5_answer0" /><label for="q11531371:5_answer0" class="m-l-1"><span class="answernumber">a. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">SELECT</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:5_answer" disabled="disabled" value="1" id="q11531371:5_answer1" checked="checked" /><label for="q11531371:5_answer1" class="m-l-1"><span class="answernumber">b. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">JOIN</span></label> </div>
+<div class="r0"><input type="radio" name="q11531371:5_answer" disabled="disabled" value="2" id="q11531371:5_answer2" /><label for="q11531371:5_answer2" class="m-l-1"><span class="answernumber">c. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">DIFFERENCE</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:5_answer" disabled="disabled" value="3" id="q11531371:5_answer3" /><label for="q11531371:5_answer3" class="m-l-1"><span class="answernumber">d. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">PROJECT</span></label> </div>
+</div></div></div></div></div><div id="q6" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">6</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q11531371:6_:flagged" value="0" /><input type="checkbox" id="q11531371:6_:flaggedcheckbox" name="q11531371:6_:flagged" value="1" checked="checked" /><input type="hidden" value="qaid=126345289&amp;qubaid=11531371&amp;qid=17016956&amp;slot=6&amp;checksum=117ca0eef90778001d61a853a4878633&amp;sesskey=pGjEELfEFD&amp;newstate=" class="questionflagpostdata" /><label id="q11531371:6_:flaggedlabel" for="q11531371:6_:flaggedcheckbox"><img src="https://lms.monash.edu/theme/image.php/monash/core/1551288643/i/flagged" alt="Flagged" id="q11531371:6_:flaggedimg" /> Flagged</label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q11531371:6_:sequencecheck" value="3" /><div class="qtext"><div style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">A primary key that consists of more than one field is called a ____ key.</div></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q11531371:6_answer" disabled="disabled" value="0" id="q11531371:6_answer0" /><label for="q11531371:6_answer0" class="m-l-1"><span class="answernumber">a. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">group</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:6_answer" disabled="disabled" value="1" id="q11531371:6_answer1" /><label for="q11531371:6_answer1" class="m-l-1"><span class="answernumber">b. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">secondary</span></label> </div>
+<div class="r0"><input type="radio" name="q11531371:6_answer" disabled="disabled" value="2" id="q11531371:6_answer2" /><label for="q11531371:6_answer2" class="m-l-1"><span class="answernumber">c. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">foreign</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:6_answer" disabled="disabled" value="3" id="q11531371:6_answer3" checked="checked" /><label for="q11531371:6_answer3" class="m-l-1"><span class="answernumber">d. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">composite</span></label> </div>
+</div></div></div></div></div><div id="q7" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">7</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q11531371:7_:flagged" value="0" /><input type="checkbox" id="q11531371:7_:flaggedcheckbox" name="q11531371:7_:flagged" value="1" checked="checked" /><input type="hidden" value="qaid=126345290&amp;qubaid=11531371&amp;qid=17016955&amp;slot=7&amp;checksum=7d1c937154277b656176427de619be7d&amp;sesskey=pGjEELfEFD&amp;newstate=" class="questionflagpostdata" /><label id="q11531371:7_:flaggedlabel" for="q11531371:7_:flaggedcheckbox"><img src="https://lms.monash.edu/theme/image.php/monash/core/1551288643/i/flagged" alt="Flagged" id="q11531371:7_:flaggedimg" /> Flagged</label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q11531371:7_:sequencecheck" value="3" /><div class="qtext"><div style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">A relational operator that yields all rows in one table that are not found in the other table is the ____ operator.</div></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q11531371:7_answer" disabled="disabled" value="0" id="q11531371:7_answer0" /><label for="q11531371:7_answer0" class="m-l-1"><span class="answernumber">a. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">PRODUCT</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:7_answer" disabled="disabled" value="1" id="q11531371:7_answer1" /><label for="q11531371:7_answer1" class="m-l-1"><span class="answernumber">b. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">UNION</span></label> </div>
+<div class="r0"><input type="radio" name="q11531371:7_answer" disabled="disabled" value="2" id="q11531371:7_answer2" /><label for="q11531371:7_answer2" class="m-l-1"><span class="answernumber">c. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">INTERSECT</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:7_answer" disabled="disabled" value="3" id="q11531371:7_answer3" checked="checked" /><label for="q11531371:7_answer3" class="m-l-1"><span class="answernumber">d. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">DIFFERENCE</span></label> </div>
+</div></div></div></div></div><div id="q8" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">8</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q11531371:8_:flagged" value="0" /><input type="checkbox" id="q11531371:8_:flaggedcheckbox" name="q11531371:8_:flagged" value="1" checked="checked" /><input type="hidden" value="qaid=126345291&amp;qubaid=11531371&amp;qid=17016954&amp;slot=8&amp;checksum=9cc0b6f9fda501ee853b976040321625&amp;sesskey=pGjEELfEFD&amp;newstate=" class="questionflagpostdata" /><label id="q11531371:8_:flaggedlabel" for="q11531371:8_:flaggedcheckbox"><img src="https://lms.monash.edu/theme/image.php/monash/core/1551288643/i/flagged" alt="Flagged" id="q11531371:8_:flaggedimg" /> Flagged</label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q11531371:8_:sequencecheck" value="3" /><div class="qtext"><div style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">Which of the following is NOT an allowable operation for a date field?</div></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q11531371:8_answer" disabled="disabled" value="0" id="q11531371:8_answer0" /><label for="q11531371:8_answer0" class="m-l-1"><span class="answernumber">a. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">Convert a date from its internal representation to a different presentation format</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:8_answer" disabled="disabled" value="1" id="q11531371:8_answer1" checked="checked" /><label for="q11531371:8_answer1" class="m-l-1"><span class="answernumber">b. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">Multiply two dates</span></label> </div>
+<div class="r0"><input type="radio" name="q11531371:8_answer" disabled="disabled" value="2" id="q11531371:8_answer2" /><label for="q11531371:8_answer2" class="m-l-1"><span class="answernumber">c. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">Create a date by adding or subtracting a number of days from a given date</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:8_answer" disabled="disabled" value="3" id="q11531371:8_answer3" /><label for="q11531371:8_answer3" class="m-l-1"><span class="answernumber">d. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">Compare two dates</span></label> </div>
+</div></div></div></div></div><div id="q9" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">9</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q11531371:9_:flagged" value="0" /><input type="checkbox" id="q11531371:9_:flaggedcheckbox" name="q11531371:9_:flagged" value="1" checked="checked" /><input type="hidden" value="qaid=126345292&amp;qubaid=11531371&amp;qid=17016953&amp;slot=9&amp;checksum=fae4b23a121a884d445e2a496e7ce123&amp;sesskey=pGjEELfEFD&amp;newstate=" class="questionflagpostdata" /><label id="q11531371:9_:flaggedlabel" for="q11531371:9_:flaggedcheckbox"><img src="https://lms.monash.edu/theme/image.php/monash/core/1551288643/i/flagged" alt="Flagged" id="q11531371:9_:flaggedimg" /> Flagged</label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q11531371:9_:sequencecheck" value="3" /><div class="qtext"><div style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">A ____ key is defined as a key that is used strictly for data retrieval purposes.</div></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q11531371:9_answer" disabled="disabled" value="0" id="q11531371:9_answer0" checked="checked" /><label for="q11531371:9_answer0" class="m-l-1"><span class="answernumber">a. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">secondary</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:9_answer" disabled="disabled" value="1" id="q11531371:9_answer1" /><label for="q11531371:9_answer1" class="m-l-1"><span class="answernumber">b. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">foreign</span></label> </div>
+<div class="r0"><input type="radio" name="q11531371:9_answer" disabled="disabled" value="2" id="q11531371:9_answer2" /><label for="q11531371:9_answer2" class="m-l-1"><span class="answernumber">c. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">primary</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:9_answer" disabled="disabled" value="3" id="q11531371:9_answer3" /><label for="q11531371:9_answer3" class="m-l-1"><span class="answernumber">d. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">data</span></label> </div>
+</div></div></div></div></div><div id="q10" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">10</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q11531371:10_:flagged" value="0" /><input type="checkbox" id="q11531371:10_:flaggedcheckbox" name="q11531371:10_:flagged" value="1" checked="checked" /><input type="hidden" value="qaid=126345293&amp;qubaid=11531371&amp;qid=17016952&amp;slot=10&amp;checksum=d94cb13e4905b781fe7433b994a0971a&amp;sesskey=pGjEELfEFD&amp;newstate=" class="questionflagpostdata" /><label id="q11531371:10_:flaggedlabel" for="q11531371:10_:flaggedcheckbox"><img src="https://lms.monash.edu/theme/image.php/monash/core/1551288643/i/flagged" alt="Flagged" id="q11531371:10_:flaggedimg" /> Flagged</label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q11531371:10_:sequencecheck" value="3" /><div class="qtext"><div style="font-size: 12pt; font-family: 'Times New Roman'; color: #000000;">Choose one or more statements that can correctly describe the concept of secondary key.</div></div><div class="ablock"><div class="prompt">Select one or more:</div><div class="answer"><div class="r0"><input type="checkbox" name="q11531371:10_choice0" disabled="disabled" value="1" id="q11531371:10_choice0" checked="checked" /><label for="q11531371:10_choice0" class="m-l-1"><span class="answernumber">a. </span>Secondary key is used for data retrieval purpose.</label> </div>
+<div class="r1"><input type="checkbox" name="q11531371:10_choice1" disabled="disabled" value="1" id="q11531371:10_choice1" /><label for="q11531371:10_choice1" class="m-l-1"><span class="answernumber">b. </span>Primary Key is usually used as a secondary key.</label> </div>
+<div class="r0"><input type="checkbox" name="q11531371:10_choice2" disabled="disabled" value="1" id="q11531371:10_choice2" checked="checked" /><label for="q11531371:10_choice2" class="m-l-1"><span class="answernumber">c. </span>Secondary key values may be the same for different rows in a table.</label> </div>
+<div class="r1"><input type="checkbox" name="q11531371:10_choice3" disabled="disabled" value="1" id="q11531371:10_choice3" /><label for="q11531371:10_choice3" class="m-l-1"><span class="answernumber">d. </span>Secondary key has to be unique for each row in a table.</label> </div>
+</div></div></div></div></div><div id="q11" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">11</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q11531371:11_:flagged" value="0" /><input type="checkbox" id="q11531371:11_:flaggedcheckbox" name="q11531371:11_:flagged" value="1" checked="checked" /><input type="hidden" value="qaid=126345294&amp;qubaid=11531371&amp;qid=17016951&amp;slot=11&amp;checksum=5461dc6bc47452304c6da815c04c12ca&amp;sesskey=pGjEELfEFD&amp;newstate=" class="questionflagpostdata" /><label id="q11531371:11_:flaggedlabel" for="q11531371:11_:flaggedcheckbox"><img src="https://lms.monash.edu/theme/image.php/monash/core/1551288643/i/flagged" alt="Flagged" id="q11531371:11_:flaggedimg" /> Flagged</label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q11531371:11_:sequencecheck" value="3" /><div class="qtext"><div style="font-size: 12pt; font-family: 'Times New Roman'; color: #000000;">What type of value should NOT be represented by NULL in a relational database?</div></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q11531371:11_answer" disabled="disabled" value="0" id="q11531371:11_answer0" /><label for="q11531371:11_answer0" class="m-l-1"><span class="answernumber">a. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">a known but missing value</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:11_answer" disabled="disabled" value="1" id="q11531371:11_answer1" checked="checked" /><label for="q11531371:11_answer1" class="m-l-1"><span class="answernumber">b. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">number zero</span></label> </div>
+<div class="r0"><input type="radio" name="q11531371:11_answer" disabled="disabled" value="2" id="q11531371:11_answer2" /><label for="q11531371:11_answer2" class="m-l-1"><span class="answernumber">c. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">a 'non applicable' attribute value for the tuple</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:11_answer" disabled="disabled" value="3" id="q11531371:11_answer3" /><label for="q11531371:11_answer3" class="m-l-1"><span class="answernumber">d. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">an unknown value</span></label> </div>
+</div></div></div></div></div><div id="q12" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">12</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q11531371:12_:flagged" value="0" /><input type="checkbox" id="q11531371:12_:flaggedcheckbox" name="q11531371:12_:flagged" value="1" checked="checked" /><input type="hidden" value="qaid=126345295&amp;qubaid=11531371&amp;qid=17016950&amp;slot=12&amp;checksum=287608f749e97b416c2b551bd3a98631&amp;sesskey=pGjEELfEFD&amp;newstate=" class="questionflagpostdata" /><label id="q11531371:12_:flaggedlabel" for="q11531371:12_:flaggedcheckbox"><img src="https://lms.monash.edu/theme/image.php/monash/core/1551288643/i/flagged" alt="Flagged" id="q11531371:12_:flaggedimg" /> Flagged</label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q11531371:12_:sequencecheck" value="3" /><div class="qtext"><p>Which of the following is NOT true?</p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q11531371:12_answer" disabled="disabled" value="0" id="q11531371:12_answer0" /><label for="q11531371:12_answer0" class="m-l-1"><span class="answernumber">a. </span>A foreign key entry may have a null value.</label> </div>
+<div class="r1"><input type="radio" name="q11531371:12_answer" disabled="disabled" value="1" id="q11531371:12_answer1" /><label for="q11531371:12_answer1" class="m-l-1"><span class="answernumber">b. </span>A non-null foreign key entry must have a value that is the same as one of the primary key values in the table to which it refers.</label> </div>
+<div class="r0"><input type="radio" name="q11531371:12_answer" disabled="disabled" value="2" id="q11531371:12_answer2" /><label for="q11531371:12_answer2" class="m-l-1"><span class="answernumber">c. </span>All primary key entries must be unique.</label> </div>
+<div class="r1"><input type="radio" name="q11531371:12_answer" disabled="disabled" value="3" id="q11531371:12_answer3" checked="checked" /><label for="q11531371:12_answer3" class="m-l-1"><span class="answernumber">d. </span>All foreign key entries must be unique.</label> </div>
+</div></div></div></div></div><div id="q13" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">13</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q11531371:13_:flagged" value="0" /><input type="checkbox" id="q11531371:13_:flaggedcheckbox" name="q11531371:13_:flagged" value="1" checked="checked" /><input type="hidden" value="qaid=126345296&amp;qubaid=11531371&amp;qid=17016949&amp;slot=13&amp;checksum=250ef4c1d15de61947c9ee2c3840c272&amp;sesskey=pGjEELfEFD&amp;newstate=" class="questionflagpostdata" /><label id="q11531371:13_:flaggedlabel" for="q11531371:13_:flaggedcheckbox"><img src="https://lms.monash.edu/theme/image.php/monash/core/1551288643/i/flagged" alt="Flagged" id="q11531371:13_:flaggedimg" /> Flagged</label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q11531371:13_:sequencecheck" value="4" /><div class="qtext"><p>Which of the following is true? </p></div><div class="ablock"><div class="prompt">Select one or more:</div><div class="answer"><div class="r0"><input type="checkbox" name="q11531371:13_choice0" disabled="disabled" value="1" id="q11531371:13_choice0" /><label for="q11531371:13_choice0" class="m-l-1"><span class="answernumber">a. </span>A primary key has to be a composite key.</label> </div>
+<div class="r1"><input type="checkbox" name="q11531371:13_choice1" disabled="disabled" value="1" id="q11531371:13_choice1" /><label for="q11531371:13_choice1" class="m-l-1"><span class="answernumber">b. </span>The order of the rows and columns in a relational table is important for the DBMS.</label> </div>
+<div class="r0"><input type="checkbox" name="q11531371:13_choice2" disabled="disabled" value="1" id="q11531371:13_choice2" /><label for="q11531371:13_choice2" class="m-l-1"><span class="answernumber">c. </span>A foreign key should not be the primary key of the same table.</label> </div>
+<div class="r1"><input type="checkbox" name="q11531371:13_choice3" disabled="disabled" value="1" id="q11531371:13_choice3" checked="checked" /><label for="q11531371:13_choice3" class="m-l-1"><span class="answernumber">d. </span>Each table must have at least one attribute that uniquely identifies each row.</label> </div>
+<div class="r0"><input type="checkbox" name="q11531371:13_choice4" disabled="disabled" value="1" id="q11531371:13_choice4" checked="checked" /><label for="q11531371:13_choice4" class="m-l-1"><span class="answernumber">e. </span>There could be more than one superkey exist in a relation.</label> </div>
+</div></div></div></div></div><div id="q14" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">14</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q11531371:14_:flagged" value="0" /><input type="checkbox" id="q11531371:14_:flaggedcheckbox" name="q11531371:14_:flagged" value="1" checked="checked" /><input type="hidden" value="qaid=126345297&amp;qubaid=11531371&amp;qid=17016948&amp;slot=14&amp;checksum=5940ada3d01d4e607ed122a8d821a439&amp;sesskey=pGjEELfEFD&amp;newstate=" class="questionflagpostdata" /><label id="q11531371:14_:flaggedlabel" for="q11531371:14_:flaggedcheckbox"><img src="https://lms.monash.edu/theme/image.php/monash/core/1551288643/i/flagged" alt="Flagged" id="q11531371:14_:flaggedimg" /> Flagged</label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q11531371:14_:sequencecheck" value="3" /><div class="qtext"><div style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">Data are classified, according to their format and function, into which categories?</div></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q11531371:14_answer" disabled="disabled" value="0" id="q11531371:14_answer0" /><label for="q11531371:14_answer0" class="m-l-1"><span class="answernumber">a. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">Numeric and character</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:14_answer" disabled="disabled" value="1" id="q11531371:14_answer1" /><label for="q11531371:14_answer1" class="m-l-1"><span class="answernumber">b. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">Numeric and logical</span></label> </div>
+<div class="r0"><input type="radio" name="q11531371:14_answer" disabled="disabled" value="2" id="q11531371:14_answer2" checked="checked" /><label for="q11531371:14_answer2" class="m-l-1"><span class="answernumber">c. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">Numeric, character, date, and logical</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:14_answer" disabled="disabled" value="3" id="q11531371:14_answer3" /><label for="q11531371:14_answer3" class="m-l-1"><span class="answernumber">d. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">Numeric, character, and date</span></label> </div>
+</div></div></div></div></div><div id="q15" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">15</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q11531371:15_:flagged" value="0" /><input type="checkbox" id="q11531371:15_:flaggedcheckbox" name="q11531371:15_:flagged" value="1" checked="checked" /><input type="hidden" value="qaid=126345298&amp;qubaid=11531371&amp;qid=17016947&amp;slot=15&amp;checksum=6cf1e920b1c5f133e0fb55f379fe1b22&amp;sesskey=pGjEELfEFD&amp;newstate=" class="questionflagpostdata" /><label id="q11531371:15_:flaggedlabel" for="q11531371:15_:flaggedcheckbox"><img src="https://lms.monash.edu/theme/image.php/monash/core/1551288643/i/flagged" alt="Flagged" id="q11531371:15_:flaggedimg" /> Flagged</label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q11531371:15_:sequencecheck" value="3" /><div class="qtext"><div style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">According to E.F. Codd, another word for the term &#8220;relation&#8221; is ____.</div></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q11531371:15_answer" disabled="disabled" value="0" id="q11531371:15_answer0" checked="checked" /><label for="q11531371:15_answer0" class="m-l-1"><span class="answernumber">a. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">table</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:15_answer" disabled="disabled" value="1" id="q11531371:15_answer1" /><label for="q11531371:15_answer1" class="m-l-1"><span class="answernumber">b. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">data query</span></label> </div>
+<div class="r0"><input type="radio" name="q11531371:15_answer" disabled="disabled" value="2" id="q11531371:15_answer2" /><label for="q11531371:15_answer2" class="m-l-1"><span class="answernumber">c. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">data index</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:15_answer" disabled="disabled" value="3" id="q11531371:15_answer3" /><label for="q11531371:15_answer3" class="m-l-1"><span class="answernumber">d. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">datafile</span></label> </div>
+</div></div></div></div></div><div id="q16" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">Question <span class="qno">16</span></h3><div class="state">Complete</div><div class="grade">Mark 1.00 out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q11531371:16_:flagged" value="0" /><input type="checkbox" id="q11531371:16_:flaggedcheckbox" name="q11531371:16_:flagged" value="1" checked="checked" /><input type="hidden" value="qaid=126345299&amp;qubaid=11531371&amp;qid=17016945&amp;slot=16&amp;checksum=a44dbfaa02492fcdcd9178a86a09c069&amp;sesskey=pGjEELfEFD&amp;newstate=" class="questionflagpostdata" /><label id="q11531371:16_:flaggedlabel" for="q11531371:16_:flaggedcheckbox"><img src="https://lms.monash.edu/theme/image.php/monash/core/1551288643/i/flagged" alt="Flagged" id="q11531371:16_:flaggedimg" /> Flagged</label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q11531371:16_:sequencecheck" value="3" /><div class="qtext"><div style="font-size: 12pt; font-family: 'Times New Roman'; color: #000000;">In relational model, a superkey is a key that can uniquely identify ________.</div></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q11531371:16_answer" disabled="disabled" value="0" id="q11531371:16_answer0" /><label for="q11531371:16_answer0" class="m-l-1"><span class="answernumber">a. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">an attribute in a relation </span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:16_answer" disabled="disabled" value="1" id="q11531371:16_answer1" /><label for="q11531371:16_answer1" class="m-l-1"><span class="answernumber">b. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">a constraint in a relation</span></label> </div>
+<div class="r0"><input type="radio" name="q11531371:16_answer" disabled="disabled" value="2" id="q11531371:16_answer2" /><label for="q11531371:16_answer2" class="m-l-1"><span class="answernumber">c. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">a dependency in a relation</span></label> </div>
+<div class="r1"><input type="radio" name="q11531371:16_answer" disabled="disabled" value="3" id="q11531371:16_answer3" checked="checked" /><label for="q11531371:16_answer3" class="m-l-1"><span class="answernumber">d. </span><span style="font-size:12pt; font-family:'Times New Roman'; color:#000000;">a tuple in a relation</span></label> </div>
+</div></div></div></div></div><input type="hidden" name="sesskey" value="pGjEELfEFD" /><div class="submitbtns"><input type="submit" class="questionflagsavebutton btn btn-secondary" name="savingflags" value="Save the state of the flags" /></div></div></form><div class="submitbtns"><a class="mod_quiz-next-nav" href="https://lms.monash.edu/mod/quiz/view.php?id=5788694">Finish review</a></div></div>
+                        <div class="m-t-2 m-b-1">
+<div class="row">
+    <div class="col-md-4">        <div class="pull-left">
+                <a href="https://lms.monash.edu/mod/resource/view.php?id=5788692&forceview=1" id="prev-activity-link" class="btn btn-link"  title="MS Windows Batch file to map lab PC drive U:" >&#x25C4; MS Windows Batch file to map lab PC drive U:</a>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="mdl-align">
+            <div class="urlselect">
+    <form method="post" action="https://lms.monash.edu/course/jumpto.php" class="form-inline" id="url_select_f5c84e06fc6d1414">
+        <input type="hidden" name="sesskey" value="pGjEELfEFD">
+            <label for="jump-to-activity" class="sr-only">
+                Jump to...
+            </label>
+        <select id="jump-to-activity"  id="jump-to-activity" class="custom-select urlselect" name="jump">
+                    <option value="" selected>Jump to...</option>
+                    <option value="/mod/lti/view.php?id=5802623&amp;forceview=1" >Lecture Streaming/Recording</option>
+                    <option value="/mod/forum/view.php?id=5802633&amp;forceview=1" >Unit Announcements</option>
+                    <option value="/mod/forum/view.php?id=5788635&amp;forceview=1" >General Discussion - Clayton</option>
+                    <option value="/mod/forum/view.php?id=5827896&amp;forceview=1" >General Discussion - Malaysia</option>
+                    <option value="/mod/hsuforum/view.php?id=5823632&amp;forceview=1" >Unit Discussion [anonymous]</option>
+                    <option value="/mod/url/view.php?id=5788690&amp;forceview=1" >Week 1 Tutorial Exercises - Google Docs</option>
+                    <option value="/mod/url/view.php?id=5828066&amp;forceview=1" >Week 1 Tutorial Exercises - Mirror, Low Bandwidth, Published Version</option>
+                    <option value="/mod/url/view.php?id=5828069&amp;forceview=1" >SQL Developer Connection Details for 2019</option>
+                    <option value="/mod/resource/view.php?id=5788692&amp;forceview=1" >MS Windows Batch file to map lab PC drive U:</option>
+                    <option value="/mod/url/view.php?id=5788699&amp;forceview=1" >Week 2 Tutorial Exercises - Google Docs</option>
+                    <option value="/mod/url/view.php?id=5840642&amp;forceview=1" >Week 2 Tutorial Exercises - Mirror, Low Bandwidth, Published Version</option>
+                    <option value="/mod/resource/view.php?id=5788700&amp;forceview=1" >Week 2 Tutorial Files</option>
+                    <option value="/mod/quiz/view.php?id=5788802&amp;forceview=1" >Exam Revision Quiz</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary" value="Go">
+            </noscript>
+    </form>
+</div>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="pull-right">
+                <a href="https://lms.monash.edu/mod/url/view.php?id=5788699&forceview=1" id="next-activity-link" class="btn btn-link"  title="Week 2 Tutorial Exercises - Google Docs" >Week 2 Tutorial Exercises - Google Docs &#x25BA;</a>
+
+        </div>
+</div>
+</div>
+</div>
+                        
+                    </div>
+                </section>
+                <section data-region="blocks-column" class="d-print-none">
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">Skip &lt;span id=&quot;mod_quiz_navblock_title&quot;&gt;Quiz navigation&lt;/span&gt;</a>
+
+<section id="mod_quiz_navblock"
+     class=" block block__fake  card mb-3"
+     role="navigation"
+     data-block="_fake"
+          aria-labelledby="instance-0-header"
+     >
+
+    <div class="card-body">
+
+            <h5 id="instance-0-header" class="card-title d-inline"><span id="mod_quiz_navblock_title">Quiz navigation</span></h5>
+
+
+        <div class="card-text content mt-3">
+            <div class="qn_buttons clearfix allquestionsononepage"><a class="qnbutton complete free btn btn-secondary thispage flagged" id="quiznavbutton1" title="Complete" data-quiz-page="0" href="#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>1<span class="accesshide"> This page <span class="flagstate">Flagged</span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton2" title="Complete" data-quiz-page="0" href="#q2"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>2<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage flagged" id="quiznavbutton3" title="Complete" data-quiz-page="0" href="#q3"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>3<span class="accesshide"> This page <span class="flagstate">Flagged</span></span></a><a class="qnbutton complete free btn btn-secondary thispage flagged" id="quiznavbutton4" title="Complete" data-quiz-page="0" href="#q4"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>4<span class="accesshide"> This page <span class="flagstate">Flagged</span></span></a><a class="qnbutton complete free btn btn-secondary thispage flagged" id="quiznavbutton5" title="Complete" data-quiz-page="0" href="#q5"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>5<span class="accesshide"> This page <span class="flagstate">Flagged</span></span></a><a class="qnbutton complete free btn btn-secondary thispage flagged" id="quiznavbutton6" title="Complete" data-quiz-page="1" href="#q6"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>6<span class="accesshide"> This page <span class="flagstate">Flagged</span></span></a><a class="qnbutton complete free btn btn-secondary thispage flagged" id="quiznavbutton7" title="Complete" data-quiz-page="1" href="#q7"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>7<span class="accesshide"> This page <span class="flagstate">Flagged</span></span></a><a class="qnbutton complete free btn btn-secondary thispage flagged" id="quiznavbutton8" title="Complete" data-quiz-page="1" href="#q8"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>8<span class="accesshide"> This page <span class="flagstate">Flagged</span></span></a><a class="qnbutton complete free btn btn-secondary thispage flagged" id="quiznavbutton9" title="Complete" data-quiz-page="1" href="#q9"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>9<span class="accesshide"> This page <span class="flagstate">Flagged</span></span></a><a class="qnbutton complete free btn btn-secondary thispage flagged" id="quiznavbutton10" title="Complete" data-quiz-page="1" href="#q10"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>10<span class="accesshide"> This page <span class="flagstate">Flagged</span></span></a><a class="qnbutton complete free btn btn-secondary thispage flagged" id="quiznavbutton11" title="Complete" data-quiz-page="2" href="#q11"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>11<span class="accesshide"> This page <span class="flagstate">Flagged</span></span></a><a class="qnbutton complete free btn btn-secondary thispage flagged" id="quiznavbutton12" title="Complete" data-quiz-page="2" href="#q12"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>12<span class="accesshide"> This page <span class="flagstate">Flagged</span></span></a><a class="qnbutton complete free btn btn-secondary thispage flagged" id="quiznavbutton13" title="Complete" data-quiz-page="2" href="#q13"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>13<span class="accesshide"> This page <span class="flagstate">Flagged</span></span></a><a class="qnbutton complete free btn btn-secondary thispage flagged" id="quiznavbutton14" title="Complete" data-quiz-page="2" href="#q14"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>14<span class="accesshide"> This page <span class="flagstate">Flagged</span></span></a><a class="qnbutton complete free btn btn-secondary thispage flagged" id="quiznavbutton15" title="Complete" data-quiz-page="2" href="#q15"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>15<span class="accesshide"> This page <span class="flagstate">Flagged</span></span></a><a class="qnbutton complete free btn btn-secondary thispage flagged" id="quiznavbutton16" title="Complete" data-quiz-page="3" href="#q16"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>16<span class="accesshide"> This page <span class="flagstate">Flagged</span></span></a></div><div class="othernav"><a href="https://lms.monash.edu/mod/quiz/review.php?attempt=11262323&amp;cmid=5788694&amp;showall=0">Show one page at a time</a><a class="mod_quiz-next-nav" href="https://lms.monash.edu/mod/quiz/view.php?id=5788694">Finish review</a></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-1"></span></aside>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex closed" aria-hidden="true" tabindex="-1">
+        <nav class="list-group">
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171" data-key="coursehome" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" >
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">FIT2094-FIT3171_S1_2019</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/user/index.php?id=51171" data-key="participants" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="90" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-users fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Participants</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/grade/report/index.php?id=51171" data-key="grades" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-table fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Grades</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=0" data-key="838643" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Unit Update</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=1" data-key="838645" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Unit Information</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=2" data-key="838644" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Lecture Streaming</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=3" data-key="838646" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Consultation Times</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=4" data-key="838647" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Forums</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=5" data-key="838648" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Assessments</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=6" data-key="840768" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Week 0 (25 Feb - 3 Mar)</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=7" data-key="838649" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Week 1 (4 Mar - 10 Mar)</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action active" href="https://lms.monash.edu/course/view.php?id=51171&amp;section=8" data-key="838650" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="1" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body font-weight-bold">Week 2 (11 Mar - 17 Mar)</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=9" data-key="838651" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Week 3 (18 Mar - 24 Mar)</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=10" data-key="838652" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Week 4 (25 Mar - 31 Mar)</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=11" data-key="838653" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Week 5 (1 Apr - 7 Apr)</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=12" data-key="838654" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Week 6 (8 Apr - 14 Apr)</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=13" data-key="838655" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Week 7 (15 Apr - 21 Apr)</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=14" data-key="838658" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Break (22 Apr - 28 Apr)</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=15" data-key="838656" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Week 8 (29 Apr - 5 May)</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=16" data-key="838657" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Week 9 (6 May - 12 May)</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=17" data-key="838659" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Week 10 (13 May - 19 May)</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=18" data-key="838660" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Week 11 (20 May - 26 May)</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=19" data-key="838661" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Week 12 (27 May - 2 Jun)</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171&amp;section=20" data-key="838662" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="51171">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Exam (3 Jun - 30 Jun)</span>
+                    </div>
+                </div>
+            </a>
+        </nav>
+        <nav class="list-group m-t-1">
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/my/" data-key="myhome" data-isexpandable="0" data-indent="0" data-showdivider="1" data-type="1" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" >
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Dashboard</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/calendar/view.php?view=month&amp;course=51171" data-key="calendar" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-calendar fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Calendar</span>
+                    </div>
+                </div>
+            </a>
+            <div class="list-group-item" data-key="mycourses" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="0" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="myhome">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body">My units</span>
+                    </div>
+                </div>
+            </div>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=50514" data-key="50514" data-isexpandable="0" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">FIT1049_S1_2019</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=50577" data-key="50577" data-isexpandable="0" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">FIT2004_S1_2019</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=51171" data-key="51171" data-isexpandable="0" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">FIT2094-FIT3171_S1_2019</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=50594" data-key="50594" data-isexpandable="0" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">FIT2099_S1_2019</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=47777" data-key="47777" data-isexpandable="0" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">FIT2081_SSA_2018</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=45598" data-key="45598" data-isexpandable="0" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">FIT1008-FIT1054_S2_2018</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=27351" data-key="27351" data-isexpandable="0" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Faculty-IT-Academic-Integrity</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=42398" data-key="42398" data-isexpandable="0" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">FIT1045-FIT1053-S1-2018</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=38028" data-key="38028" data-isexpandable="0" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">IT-Student-Portal</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/course/view.php?id=41963" data-key="41963" data-isexpandable="0" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Monash 101 1/2018</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://lms.monash.edu/my/?myoverviewtab=courses" data-key="courseindexpage" data-isexpandable="0" data-indent="1" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-fw fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">More...</span>
+                    </div>
+                </div>
+            </a>
+        </nav>
+    </div>
+</div>
+
+<footer id="page-footer" class="py-3 bg-dark text-light">
+    <div class="footer-container">
+        <div class="copyright-full">
+            <div class="copyright-logo">
+                <img src="/theme/monash/pix/logo-monash-white.png" alt="Monash University" title="Monash University" width="120" />
+            </div>
+            <div class="copyright-content">
+                <h5>COPYRIGHT WARNING</h5>
+                <p>Commonwealth of Australia Copyright Act 1968</p>
+                <h5>Warning</h5>
+                <p>This material has been reproduced and communicated to you by or on behalf of Monash University in accordance with section 113P of the Copyright Act 1968 (the Act).</p>
+                <p>The material in this communication may be subject to copyright under the Act. Any further reproduction or communication of this material by you may be the subject of copyright protection under the Act.</p>
+            </div>
+            <div class="copyright-close">
+                <img src="/theme/monash/pix/round_highlight_off_white.png" alt="Close Copyright" title="Close Copyright" />
+            </div>
+        </div>
+        <div class="copyright">
+            <div>Copyright Monash University 2018.</div>
+            <div><a class="copyright-warning" href="#" title="Copyright warning">Copyright Warning</a></div>
+            <div class="logininfo">You are logged in as <a href="https://lms.monash.edu/user/profile.php?id=534408" title="View profile">Nicholas Lin Ren Chong</a> (<a href="https://lms.monash.edu/login/logout.php?sesskey=pGjEELfEFD">Log out</a>)</div>
+        </div>
+        <div class="tool_dataprivacy"><a href="https://lms.monash.edu/admin/tool/dataprivacy/summary.php">Data retention summary</a></div>
+        
+<!-- WEB ANALYTICS 34 START --><!-- Start Matomo Code -->
+
+<script type="text/javascript">
+    var _paq = _paq || [];
+    
+    _paq.push(['setUserId', 534408]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    _paq.push(['enableHeartBeatTimer', 30]);
+
+    function embedTrackingCode() {
+        var u='//analytics.catalyst-au.net/';
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 1]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    }
+
+    if (window.addEventListener) {
+        window.addEventListener("load", embedTrackingCode, false);
+    } else if (window.attachEvent) {
+        window.attachEvent("onload", embedTrackingCode);
+    } else {
+        embedTrackingCode();
+    }
+</script>
+<!-- End Matomo Code --><!-- WEB ANALYTICS 34 END --><script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://lms.monash.edu/lib/requirejs.php/1551288643/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://lms.monash.edu/lib/javascript.php/1551288643/lib/jquery/jquery-3.2.1.min',
+        jqueryui: 'https://lms.monash.edu/lib/javascript.php/1551288643/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://lms.monash.edu/lib/javascript.php/1551288643/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="https://lms.monash.edu/lib/javascript.php/1551288643/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://lms.monash.edu/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("en",{
+ "Audio Player": "Audio Player",
+ "Video Player": "Video Player",
+ "Play": "Play",
+ "Pause": "Pause",
+ "Replay": "Replay",
+ "Current Time": "Current Time",
+ "Duration Time": "Duration Time",
+ "Remaining Time": "Remaining Time",
+ "Stream Type": "Stream Type",
+ "LIVE": "LIVE",
+ "Loaded": "Loaded",
+ "Progress": "Progress",
+ "Progress Bar": "Progress Bar",
+ "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+ "Fullscreen": "Fullscreen",
+ "Non-Fullscreen": "Non-Fullscreen",
+ "Mute": "Mute",
+ "Unmute": "Unmute",
+ "Playback Rate": "Playback Rate",
+ "Subtitles": "Subtitles",
+ "subtitles off": "subtitles off",
+ "Captions": "Captions",
+ "captions off": "captions off",
+ "Chapters": "Chapters",
+ "Descriptions": "Descriptions",
+ "descriptions off": "descriptions off",
+ "Audio Track": "Audio Track",
+ "Volume Level": "Volume Level",
+ "You aborted the media playback": "You aborted the media playback",
+ "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+ "No compatible source was found for this media.": "No compatible source was found for this media.",
+ "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+ "Play Video": "Play Video",
+ "Close": "Close",
+ "Close Modal Dialog": "Close Modal Dialog",
+ "Modal Window": "Modal Window",
+ "This is a modal window": "This is a modal window",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+ ", opens captions settings dialog": ", opens captions settings dialog",
+ ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+ ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+ ", selected": ", selected",
+ "captions settings": "captions settings",
+ "subtitles settings": "subititles settings",
+ "descriptions settings": "descriptions settings",
+ "Text": "Text",
+ "White": "White",
+ "Black": "Black",
+ "Red": "Red",
+ "Green": "Green",
+ "Blue": "Blue",
+ "Yellow": "Yellow",
+ "Magenta": "Magenta",
+ "Cyan": "Cyan",
+ "Background": "Background",
+ "Window": "Window",
+ "Transparent": "Transparent",
+ "Semi-Transparent": "Semi-Transparent",
+ "Opaque": "Opaque",
+ "Font Size": "Font Size",
+ "Text Edge Style": "Text Edge Style",
+ "None": "None",
+ "Raised": "Raised",
+ "Depressed": "Depressed",
+ "Uniform": "Uniform",
+ "Dropshadow": "Dropshadow",
+ "Font Family": "Font Family",
+ "Proportional Sans-Serif": "Proportional Sans-Serif",
+ "Monospace Sans-Serif": "Monospace Sans-Serif",
+ "Proportional Serif": "Proportional Serif",
+ "Monospace Serif": "Monospace Serif",
+ "Casual": "Casual",
+ "Script": "Script",
+ "Small Caps": "Small Caps",
+ "Reset": "Reset",
+ "restore all settings to the default values": "restore all settings to the default values",
+ "Done": "Done",
+ "Caption Settings Dialog": "Caption Settings Dialog",
+ "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+ "End of dialog window.": "End of dialog window."
+});
+
+    });
+});;
+require(["theme_monash/copyright"], function(amd) { amd.init(false); });;
+function legacy_activity_onclick_handler_1(e) { e.halt(); window.open('https://lms.monash.edu/mod/url/view.php?id=5788699&redirect=1'); return false; };
+function legacy_activity_onclick_handler_2(e) { e.halt(); window.open('https://lms.monash.edu/mod/url/view.php?id=5840642&redirect=1'); return false; };
+
+require(['jquery', 'message_popup/message_popover_controller'], function($, controller) {
+    var container = $('#nav-message-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+        require(['jquery'], function($) {
+            $('#jump-to-activity').change(function() {
+                if (!$(this).val()) {
+                    return false;
+                }
+                $('#url_select_f5c84e06fc6d1414').submit();
+            });
+        });
+    ;
+
+require(['theme_boost/loader']);
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+;
+require(["core/notification"], function(amd) { amd.init(8383104, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.yui.add_module({"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/lms.monash.edu\/lib\/javascript.php\/1551288643\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/lms.monash.edu\/lib\/javascript.php\/1551288643\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}});
+
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","ok":"OK","cancel":"Cancel","changesmadereallygoaway":"You have made changes. Are you sure you want to navigate away and lose your changes?","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"question":{"flagged":"Flagged"},"quiz":{"functiondisabledbysecuremode":"That functionality is currently disabled","startattempt":"Start attempt","timesup":"Time is up!"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
+});
+ M.util.js_pending('random5c84e06fc6d141'); Y.use('core_question_flags', function(Y) { M.core_question_flags.init(Y, "https:\/\/lms.monash.edu\/question\/toggleflag.php", [{"src":"https:\/\/lms.monash.edu\/theme\/image.php\/monash\/core\/1551288643\/i\/unflagged","title":"Flag this question for future reference","alt":"Not flagged"},{"src":"https:\/\/lms.monash.edu\/theme\/image.php\/monash\/core\/1551288643\/i\/flagged","title":"Remove flag","alt":"Flagged"}], ["Flag question","Remove flag"]);  M.util.js_complete('random5c84e06fc6d141'); });
+ M.util.js_pending('random5c84e06fc6d142'); Y.use('mod_quiz', function(Y) { M.mod_quiz.nav.init(Y);  M.util.js_complete('random5c84e06fc6d142'); });
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random5c84e06fc6d1415'); Y.use('mod_quiz', function(Y) { M.mod_quiz.init_review_form(Y);  M.util.js_complete('random5c84e06fc6d1415'); });
+ M.util.js_pending('random5c84e06fc6d1416'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5c84e06fc6d1416'); });
+})();
+//]]>
+</script>
+
+    </div>
+</footer>
+</body>
+</html>

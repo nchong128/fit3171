@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="544C11E0-E08C-2B58-A9BE-036F5B3D3E58" name="CUSTOMER">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 05:16:45 UTC</createdTime>
+<ownerDesignName>design_1</ownerDesignName>
+<engineerTo>
+<item key="B6F8A424-BD51-8CCE-84FD-120B77946172" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="custno" id="C360C5E2-FDF8-21B3-BD77-8A2515113770">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 05:17:11 UTC</createdTime>
+<commentInRDBMS>Holds the customer unique number</commentInRDBMS>
+<ownerDesignName>design_1</ownerDesignName>
+<engineerTo>
+<item key="B6F8A424-BD51-8CCE-84FD-120B77946172" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="custname" id="0213B009-1068-D6ED-75C4-F1408522189B">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 05:17:11 UTC</createdTime>
+<commentInRDBMS>Holds the customer&apos;s full name</commentInRDBMS>
+<ownerDesignName>design_1</ownerDesignName>
+<engineerTo>
+<item key="B6F8A424-BD51-8CCE-84FD-120B77946172" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="custaddress" id="35DC7148-33E7-FEB5-3A67-6D295649928B">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 05:17:12 UTC</createdTime>
+<commentInRDBMS>Holds the customer&apos;s address</commentInRDBMS>
+<ownerDesignName>design_1</ownerDesignName>
+<engineerTo>
+<item key="B6F8A424-BD51-8CCE-84FD-120B77946172" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4E35EA04-58CA-80BF-6F6F-E777A099974A" name="CUSTOMER PK">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 05:17:32 UTC</createdTime>
+<ownerDesignName>design_1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="B6F8A424-BD51-8CCE-84FD-120B77946172" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C360C5E2-FDF8-21B3-BD77-8A2515113770</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

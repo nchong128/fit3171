@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C37EF2EE-948A-96BD-B808-94C330EE79A7" name="PRODUCT">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:05:20 UTC</createdTime>
+<generatorID>F76702D3-8AE4-44B6-27DF-6BC39ADD8B7B</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="prodno" id="FB2C27D4-C275-6586-92B3-E6F8FDD753B7">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:05:20 UTC</createdTime>
+<generatorID>04CD2D02-0144-D22F-661F-A07F764E0938</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="proddesc" id="938902BF-017C-C1A2-0835-0079A153DCB2">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:05:20 UTC</createdTime>
+<generatorID>3ED7A290-79C3-5638-C241-956910CA53EF</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="produnitprice" id="2A32ACA5-CFFA-4C74-3AFB-ABE3882882A2">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:05:20 UTC</createdTime>
+<generatorID>7C3FF6FB-0024-C02C-9B0F-B9B2AB076DD5</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="22DD1D5C-16A2-D81E-DF6A-0CB3C3247FEC" name="PRODUCT_PK">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:05:20 UTC</createdTime>
+<generatorID>E0B09491-F402-7761-E2C1-73C23A50C0AB</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB2C27D4-C275-6586-92B3-E6F8FDD753B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

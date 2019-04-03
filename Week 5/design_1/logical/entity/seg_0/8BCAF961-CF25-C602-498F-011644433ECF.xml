@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8BCAF961-CF25-C602-498F-011644433ECF" name="ORDERLINE">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 05:55:43 UTC</createdTime>
+<ownerDesignName>design_1</ownerDesignName>
+<engineerTo>
+<item key="B6F8A424-BD51-8CCE-84FD-120B77946172" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="orderno" id="7C2789A6-7883-ED85-183C-3852440CEFB1">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:00:14 UTC</createdTime>
+<commentInRDBMS>The order number</commentInRDBMS>
+<generatorID>FF8997EB-2218-85CC-BBF8-B708494347C6</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<engineerTo>
+<item key="B6F8A424-BD51-8CCE-84FD-120B77946172" value="true"/>
+</engineerTo>
+<referedAttribute>391D70DD-8024-C3E1-97D3-7C38826B460F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prodno" id="BFC4EC61-0569-AD7A-6105-8D381078125C">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:00:33 UTC</createdTime>
+<generatorID>EFD604A1-7DD4-3559-8880-C42A52816A7F</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<engineerTo>
+<item key="B6F8A424-BD51-8CCE-84FD-120B77946172" value="true"/>
+</engineerTo>
+<referedAttribute>04CD2D02-0144-D22F-661F-A07F764E0938</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qtyordered" id="1BBD75D2-E849-431D-792B-80576E044880">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 05:55:53 UTC</createdTime>
+<ownerDesignName>design_1</ownerDesignName>
+<engineerTo>
+<item key="B6F8A424-BD51-8CCE-84FD-120B77946172" value="true"/>
+</engineerTo>
+<constraintName>chk_qtyordered</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="qtyordered &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lineprice" id="C9A7E039-5197-5D79-9430-2D042E765A69">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 05:55:54 UTC</createdTime>
+<ownerDesignName>design_1</ownerDesignName>
+<engineerTo>
+<item key="B6F8A424-BD51-8CCE-84FD-120B77946172" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="617F9D6D-F2C0-6473-3B79-83CBF5779CF2" name="ORDERLINE PK">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 05:56:12 UTC</createdTime>
+<ownerDesignName>design_1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="B6F8A424-BD51-8CCE-84FD-120B77946172" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7C2789A6-7883-ED85-183C-3852440CEFB1</attributeRef>
+<attributeRef>BFC4EC61-0569-AD7A-6105-8D381078125C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

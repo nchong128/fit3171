@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0B989D35-0CB7-EAC2-7DB8-D0A788671F88" name="CUSTOMER">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:05:19 UTC</createdTime>
+<generatorID>544C11E0-E08C-2B58-A9BE-036F5B3D3E58</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="custno" id="CB7791B0-F29F-353C-4A1C-4AFA3BEE5A3B">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:05:20 UTC</createdTime>
+<commentInRDBMS>Holds the customer unique number</commentInRDBMS>
+<generatorID>C360C5E2-FDF8-21B3-BD77-8A2515113770</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="custname" id="6685E005-A145-E2F8-77BA-F0B6B9FD2970">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:05:20 UTC</createdTime>
+<commentInRDBMS>Holds the customer&apos;s full name</commentInRDBMS>
+<generatorID>0213B009-1068-D6ED-75C4-F1408522189B</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="custaddress" id="2C0FB0E0-175F-4857-8137-148194859DDB">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:05:20 UTC</createdTime>
+<commentInRDBMS>Holds the customer&apos;s address</commentInRDBMS>
+<generatorID>35DC7148-33E7-FEB5-3A67-6D295649928B</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4518330F-6B56-BE07-4AE1-BEED04357E88" name="CUSTOMER_PK">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:05:20 UTC</createdTime>
+<generatorID>4E35EA04-58CA-80BF-6F6F-E777A099974A</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB7791B0-F29F-353C-4A1C-4AFA3BEE5A3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

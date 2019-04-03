@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F73AE4B0-D5A6-4684-16AD-64A49F910DEA" name="ORDERLINE">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:05:20 UTC</createdTime>
+<generatorID>8BCAF961-CF25-C602-498F-011644433ECF</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="orderno" id="E74A0351-5FB5-ACE2-961E-8A0017AEB831">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:05:20 UTC</createdTime>
+<commentInRDBMS>The order number</commentInRDBMS>
+<generatorID>7C2789A6-7883-ED85-183C-3852440CEFB1</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E181FDB9-D570-B285-199C-C5BEE34F8C5C" referredColumn="F4ED4E46-7BA5-937F-B416-25C11520094C"/>
+</associations>
+</Column>
+<Column name="prodno" id="1C5D0ABC-0AED-0DA2-378B-52A2A8A0A01F">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:05:20 UTC</createdTime>
+<generatorID>BFC4EC61-0569-AD7A-6105-8D381078125C</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F988A8FF-789F-14E8-FB4E-AB514AD67E49" referredColumn="FB2C27D4-C275-6586-92B3-E6F8FDD753B7"/>
+</associations>
+</Column>
+<Column name="qtyordered" id="9D576310-599A-B91C-BB1F-EC276F3DD7CD">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:05:20 UTC</createdTime>
+<generatorID>1BBD75D2-E849-431D-792B-80576E044880</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<constraintName>chk_qtyordered</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="qtyordered &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lineprice" id="498102D6-E715-C09F-7AA6-D0D8A99DAF18">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:05:20 UTC</createdTime>
+<generatorID>C9A7E039-5197-5D79-9430-2D042E765A69</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="57F89135-E5FA-A593-909A-C80D99EE730F" name="ORDERLINE_PK">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:05:20 UTC</createdTime>
+<generatorID>617F9D6D-F2C0-6473-3B79-83CBF5779CF2</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E74A0351-5FB5-ACE2-961E-8A0017AEB831"/>
+<colUsage columnID="1C5D0ABC-0AED-0DA2-378B-52A2A8A0A01F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="52A568FB-2FDA-8C72-EAE2-39D057B6883C" name="Relation_6">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:05:20 UTC</createdTime>
+<generatorID>FF8997EB-2218-85CC-BBF8-B708494347C6</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E74A0351-5FB5-ACE2-961E-8A0017AEB831"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2815C4BB-8069-00A1-9C99-DA2C1D20BCF5" name="Relation_7">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 06:05:20 UTC</createdTime>
+<generatorID>EFD604A1-7DD4-3559-8880-C42A52816A7F</generatorID>
+<ownerDesignName>design_1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C5D0ABC-0AED-0DA2-378B-52A2A8A0A01F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

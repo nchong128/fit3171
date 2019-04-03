@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="design_1" id="595D1116-1DE3-175F-46BA-9FD931D312A2" version="3.5">
+<createdBy>LG4000</createdBy>
+<createdTime>2019-04-03 05:08:07 UTC</createdTime>
+<ownerDesignName>design_1</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>595D1116-1DE3-175F-46BA-9FD931D312A2</designId>
+</OSDM_Design>

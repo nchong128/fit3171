@@ -1,0 +1,128 @@
+Form 1: Approved Units
+======================
+UNF
+----
+UNIT(unitNum, unitName, unitDesc, unitVal)
+
+1NF
+----
+- UNIT(PK: unitNum, unitName, unitDesc, unitVal)
+- No repeating groups
+- Primary key of unitNum
+- Dependencies:
+- unitNum -> unitName, unitDesc, unitVal (FULL)
+- No partials
+- No transitive dependencies
+
+2NF
+----
+- UNIT(PK: unitNum, unitName, unitDesc, unitVal)
+
+3NF
+----
+- UNIT(PK: unitNum, unitName, unitDesc, unitVal)
+
+Form 2: Lecturer Details
+=========================
+UNF
+----
+LECTURER(PK: lectNum, lectName, lectOfficeNum, lectPhoneNum, (unitNum, unitName))
+
+1NF
+-----
+LECTURER(PK: lectNum, lectName, lectOfficeNum, lectPhoneNum)
+- lectNum -> lectName, lectOfficeNum, lectPhoneNum (FULL)
+- No partials
+
+ADVISES(PK: lectNum,PK: unitNum, unitName)
+- unitNum -> unitName
+
+2NF
+----
+LECTURER(PK: lectNum, lectName, lectOfficeNum, lectPhoneNum)
+- lectNum -> lectName, lectOfficeNum, lectPhoneNum (FULL)
+
+ADVISES(PK: lectNum,PK: unitNum)
+
+UNIT(PK: unitNum, unitName)
+
+3NF
+-----
+LECTURER(PK: lectNum, lectName, lectOfficeNum, lectPhoneNum)
+- lectNum -> lectName, lectOfficeNum, lectPhoneNum (FULL)
+
+ADVISES(PK: lectNum,PK: unitNum)
+
+UNIT(PK: unitNum, unitName)
+
+Form 3: Student Details
+=========================
+UNF
+STUDENT(stuNum, stuName, stuAddress, stuCourse, stuStudyMode, stuLectNum, stuLectName, (unitNum, unitName, yrSem, grade))
+
+1NF
+----
+STUDENT(PK: stuNum, stuName, stuAddress, stuCourse, stuStudyMode, stuLectNum, stuLectName)
+- Unique identifier: stuNum
+- stuNum -> stuName, stuAddress, stuCourse, stuStudyMode (FULL)
+- stuLectNum -> stuLectName (transitive)
+
+AC-REC(PK: stuNum, PK: unitNum, unitName, PK: yrSem, grade)
+- unitNum -> unitName (partial)
+
+2NF
+----
+STUDENT(PK: stuNum, stuName, stuAddress, stuCourse, stuStudyMode, stuLectNum, stuLectName)
+- Unique identifier: stuNum
+- stuNum -> stuName, stuAddress, stuCourse, stuStudyMode (FULL)
+- stuLectNum -> stuLectName (transitive)
+
+AC-REC(PK: stuNum, PK, FK: unitNum, unitName, PK: yrSem, grade)
+
+UNIT(PK: unitNum, unitName)
+- unitNum -> unitName(FULL)
+
+3NF
+-----
+STUDENT(PK: stuNum, stuName, stuAddress, stuCourse, stuStudyMode, FK: lectNum)
+- stuNum -> stuName, stuAddress, stuCourse, stuStudyMode (FULL)
+
+LECTURER(lectName, PK: lectNum)
+- lectNum -> lectName (full)
+
+AC-REC(PK: stuNum, PK, FK: unitNum, unitName, PK: yrSem, grade)
+
+UNIT(PK: unitNum, unitName)
+- unitNum -> unitName(FULL)
+
+Collected forms
+=================
+1) UNIT(PK: unitNum, unitName, unitDesc, unitVal)
+
+2) LECTURER(PK: lectNum, lectName, lectOfficeNum, lectPhoneNum)
+
+3) ADVISES(PK: lectNum,PK: unitNum)
+
+4) UNIT(PK: unitNum, unitName)
+
+5) STUDENT(PK: stuNum, stuName, stuAddress, stuCourse, stuStudyMode, FK: lectNum)
+
+6) LECTURER(lectName, PK: lectNum)
+
+7) AC-REC(PK: stuNum, PK, FK: unitNum, unitName, PK: yrSem, grade)
+
+8) UNIT(PK: unitNum, unitName)
+
+Attribute synthesis
+===============
+- Join together relations with identical PK
+
+1, 4, 8) UNIT(PK: unitNum, unitName, unitDesc, unitVal)
+
+2,6) LECTURER(PK: lectNum, lectName, lectOfficeNum, lectPhoneNum)
+
+3) ADVISES(PK: lectNum,PK: unitNum)
+
+5) STUDENT(PK: stuNum, stuName, stuAddress, stuCourse, stuStudyMode, FK: lectNum)
+
+7) AC-REC(PK: stuNum, PK, FK: unitNum, unitName, PK: yrSem, grade)

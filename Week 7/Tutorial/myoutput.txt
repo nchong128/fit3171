@@ -1,0 +1,127 @@
+
+Table ENROLMENT dropped.
+
+
+Table STUDENT dropped.
+
+
+Table UNIT dropped.
+
+
+Sequence STU_SEQ dropped.
+
+
+Sequence STU_SEQ created.
+
+
+Table UNIT created.
+
+
+Table STUDENT created.
+
+
+Table ENROLMENT created.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Commit complete.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Commit complete.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Commit complete.
+
+
+   STU_NBR STU_LNAME                                          STU_FNAME                                          STU_DOB  
+---------- -------------------------------------------------- -------------------------------------------------- ---------
+  11111111 Bloggs                                             Fred                                               01/JAN/90
+  11111112 Nice                                               Nick                                               10/OCT/94
+  11111113 Wheat                                              Wendy                                              05/MAY/90
+  11111114 Sheen                                              Cindy                                              25/DEC/96
+  11111115 Mouse                                              Mickey                                             12/AUG/99
+
+
+UNIT_CO UNIT_NAME                                         
+------- --------------------------------------------------
+FIT9999 FIT Last Unit                                     
+FIT5132 Introduction to Databases                         
+FIT5016 Project                                           
+FIT5111 Student's Life                                    
+
+
+   STU_NBR UNIT_CO ENROL_YEAR E ENROL_MARK EN
+---------- ------- ---------- - ---------- --
+  11111111 FIT5132       2013 1         35 N 
+  11111111 FIT5016       2013 1         61 C 
+  11111111 FIT5132       2013 2         42 N 
+  11111111 FIT5111       2013 2         76 D 
+  11111111 FIT5132       2014 2              
+  11111112 FIT5132       2013 2         83 HD
+  11111112 FIT5111       2013 2         79 D 
+  11111113 FIT5132       2014 2              
+  11111113 FIT5111       2014 2              
+  11111114 FIT5111       2014 2              
+  11111115 FIT5132       2016 2              
+
+11 rows selected. 
+

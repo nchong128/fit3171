@@ -1,0 +1,28 @@
+    -- Trigger to automatically maintain the employee count in
+    -- the department table
+    
+    -- for inserts, increase employee count in department:
+    IF INSERTING THEN
+    	UPDATE DEPARTMENT 
+    	    SET dept_empcnt = dept_empcnt + 1
+    	    where dept_no = :new.dept_no;
+
+    -- for deletes, decrease employee count in department:
+    ELSE
+        IF DELETING THEN
+     	    UPDATE DEPARTMENT 
+    	        SET dept_empcnt = dept_empcnt - 1
+    	        where dept_no = :old.dept_no; 
+
+        -- for updates ie moves, modify the employee count in department:
+        ELSE
+            IF UPDATING THEN
+      	        UPDATE DEPARTMENT 
+    	            SET dept_empcnt = dept_empcnt - 1
+    	            where dept_no = :old.dept_no; 
+    	        UPDATE DEPARTMENT 
+    	            SET dept_empcnt = dept_empcnt + 1
+    	            where dept_no = :new.dept_no;
+            END IF;
+        END IF;
+     END IF; 

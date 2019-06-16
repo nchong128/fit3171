@@ -216,9 +216,146 @@ from payroll.department d left outer join payroll.employee e on d.deptno = e.dep
 group by d.deptno, d.deptname;
 
 --12
+select d.deptno,d.deptname, e.empjob, sum(nvl(e.empmsal,0)) as "total monthly salary"
+from payroll.department d join payroll.employee e on d.deptno = e.deptno
+group by d.deptno,d.deptname, e.empjob
+order by d.deptno;
+
 --13
+select empname, empmsal
+from payroll.employee
+where empmsal > (select avg(empmsal) from payroll.employee)
+order by empmsal asc;
+
 --14
+select deptno
+from payroll.employee
+group by deptno
+having avg(empmsal) =
+    (
+    select max(avg(empmsal)) 
+    from payroll.employee 
+    group by deptno
+    );
+
 --15
+select c.crscode, c.crsdesc, count(c.crscode)
+from payroll.offering o join payroll.course c on o.crscode = c.crscode
+group by c.crscode, c.crsdesc
+having count(c.crscode) = (
+    select max(count(crscode))
+    from payroll.offering
+    group by crscode
+);
+
 --16
+select empname, empjob, empbdate
+from payroll.employee
+where
+    empjob = (
+        select empjob 
+        from payroll.employee 
+        where empname = 'SCOTT'
+    ) and
+    to_char(empbdate,'YYYY') = (
+        select to_char(empbdate, 'YYYY')
+        from payroll.employee
+        where empname = 'SCOTT'
+    ) and 
+    empname != 'SCOTT'
+order by empname;    
+
 --17
+--using the MINUS statement, which employees have never registered in a course
+select empno
+from payroll.employee
+minus
+select empno
+from payroll.registration
+group by empno;
+
 --18
+select distinct empno from payroll.registration
+intersect
+select distinct empno from payroll.offering;
+
+select to_char(empbdate, 'day mm yyyy') from payroll.employee;
+
+create table myvendor (
+    name VARCHAR(50) NOT NULL UNIQUE,
+    num  NUMBER(5,0) NOT NULL
+);
+
+alter table myvendor
+add PRIMARY KEY (num);
+
+insert into myvendor VALUES('ryan', 150);
+
+commit;
+
+create table product(
+    prod_name VARCHAR(50) NOT NULL,
+    num  NUMBER(5,0) NOT NULL,
+    FOREIGN KEY (num) references myvendor
+);
+
+insert into product values('chicken soup', 30);
+
+select * from product;
+select * from myvendor;
+select * from product, myvendor;
+select * from product full outer join myvendor on product.num = myvendor.num;
+
+create view test_view as
+select *
+from product;
+
+select * from test_view;
+update test_view
+set prod_name = 'poodle'
+where num = 30;
+
+commit;
+
+create table myproduct (
+    prod_num    NUMBER(3,0) NOT NULL ,
+    prod_name   VARCHAR(50) NOT NULL,
+    prod_type   CHAR(1)     NOT NULL CHECK (prod_type IN ('F','D', 'O')),
+    PRIMARY KEY(prod_num)
+);
+
+alter table myproduct
+add vendor_num number(5,0);
+
+alter table myproduct
+add constraint v_p_fk
+FOREIGN KEY (vendor_num)
+REFERENCES myvendor(num);
+
+alter table myproduct
+drop column prod_type;
+
+alter table myproduct
+add prod_type CHAR(1);
+
+alter table myproduct
+add constraint prod_type_chk
+check (prod_type = 'F' OR prod_type = 'D');
+
+alter table myproduct
+modify prod_type char(1) not null;
+
+alter table myproduct
+drop constraint prod_type_chk;
+
+
+select * from SHAREDSAMPLES.enrolment;
+select unitcode, max(mark)
+from sharedsamples.enrolment
+group by unitcode;
+
+select count(mark), count(*)
+from sharedsamples.enrolment;
+
+select mark from sharedsamples.enrolment;
+

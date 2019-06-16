@@ -170,6 +170,8 @@ GROUP BY
     empjob
 ORDER BY deptno,empjob;
 
+
+
 --Q13. Which employee earns more than the average salary?
 SELECT
     empno,
